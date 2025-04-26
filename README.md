@@ -1,145 +1,159 @@
-🐍 Python OOP Assignment
-📚 Objective
-This assignment covers Object-Oriented Programming (OOP) concepts using Python.
-Each task focuses on a specific concept like self, class methods, inheritance, abstraction, decorators, exceptions, and more.
+# 🐍 Python OOP Assignment
 
-The goal is to understand, implement, and practice OOP in Python with simple examples.
+## 📚 Objective
+This assignment covers **Object-Oriented Programming (OOP)** concepts using Python.  
+Each task focuses on a specific concept like **self, class methods, inheritance, abstraction, decorators, exceptions**, and more.
 
-📋 Tasks Overview
-1. Using self
-Create a Student class with name and marks.
+The goal is to **understand, implement, and practice** OOP in Python with simple examples.
 
-Initialize using self in the constructor.
+---
 
-Add display() method to show details.
+## 📋 Tasks Overview
 
-2. Using cls
-Create a Counter class.
+### 1. Using `self`
+- Create a `Student` class with `name` and `marks`.
+- Initialize using `self` in the constructor.
+- Add `display()` method to show details.
 
-Use class variable + cls method to track object count.
+---
 
-3. Public Variables and Methods
-Create a Car class.
+### 2. Using `cls`
+- Create a `Counter` class.
+- Use class variable + `cls` method to track object count.
 
-Use a public variable brand and a method start() accessible outside the class.
+---
 
-4. Class Variables and Class Methods
-Create a Bank class with a class variable bank_name.
+### 3. Public Variables and Methods
+- Create a `Car` class.
+- Use a public variable `brand` and a method `start()` accessible outside the class.
 
-Add a method to change bank name affecting all instances.
+---
 
-5. Static Variables and Static Methods
-Create a MathUtils class.
+### 4. Class Variables and Class Methods
+- Create a `Bank` class with a class variable `bank_name`.
+- Add a method to change bank name affecting all instances.
 
-Use a static method add(a, b) without using class/instance variables.
+---
 
-6. Constructors and Destructors
-Create a Logger class.
+### 5. Static Variables and Static Methods
+- Create a `MathUtils` class.
+- Use a static method `add(a, b)` without using class/instance variables.
 
-Print a message when object is created and another when destroyed.
+---
 
-7. Access Modifiers (Public, Protected, Private)
-Create an Employee class with:
+### 6. Constructors and Destructors
+- Create a `Logger` class.
+- Print a message when object is created and another when destroyed.
 
-Public: name
+---
 
-Protected: _salary
+### 7. Access Modifiers (Public, Protected, Private)
+- Create an `Employee` class with:
+  - Public: `name`
+  - Protected: `_salary`
+  - Private: `__ssn`
+- Try accessing all three variables.
 
-Private: __ssn
+---
 
-Try accessing all three variables.
+### 8. The `super()` Function
+- Create a `Person` class.
+- Inherit `Teacher` class, call base class constructor using `super()`.
 
-8. The super() Function
-Create a Person class.
+---
 
-Inherit Teacher class, call base class constructor using super().
+### 9. Abstract Classes and Methods
+- Create an abstract class `Shape` using `abc` module.
+- Implement `area()` method in `Rectangle` class.
 
-9. Abstract Classes and Methods
-Create an abstract class Shape using abc module.
+---
 
-Implement area() method in Rectangle class.
+### 10. Instance Methods
+- Create a `Dog` class with attributes `name` and `breed`.
+- Add an instance method `bark()` that prints the dog's name.
 
-10. Instance Methods
-Create a Dog class with attributes name and breed.
+---
 
-Add an instance method bark() that prints the dog's name.
+### 11. Class Methods
+- Create a `Book` class with class variable `total_books`.
+- Use class method to increment book count.
 
-11. Class Methods
-Create a Book class with class variable total_books.
+---
 
-Use class method to increment book count.
+### 12. Static Methods
+- Create a `TemperatureConverter` class.
+- Add a static method `celsius_to_fahrenheit(celsius)`.
 
-12. Static Methods
-Create a TemperatureConverter class.
+---
 
-Add a static method celsius_to_fahrenheit(celsius).
+### 13. Composition
+- Create an `Engine` and a `Car` class.
+- Pass an `Engine` object into `Car` (composition).
 
-13. Composition
-Create an Engine and a Car class.
+---
 
-Pass an Engine object into Car (composition).
+### 14. Aggregation
+- Create a `Department` and an `Employee` class.
+- Department stores a reference to Employee object independently.
 
-14. Aggregation
-Create a Department and an Employee class.
+---
 
-Department stores a reference to Employee object independently.
+### 15. MRO and Diamond Inheritance
+- Create 4 classes: `A`, `B`, `C`, and `D`.
+- `D` inherits from `B` and `C`.
+- Check Method Resolution Order (MRO) by calling `show()`.
 
-15. MRO and Diamond Inheritance
-Create 4 classes: A, B, C, and D.
+---
 
-D inherits from B and C.
+### 16. Function Decorators
+- Create a decorator `log_function_call`.
+- Decorate a function `say_hello()` to print a message before execution.
 
-Check Method Resolution Order (MRO) by calling show().
+---
 
-16. Function Decorators
-Create a decorator log_function_call.
+### 17. Class Decorators
+- Create a class decorator `add_greeting`.
+- Modify a class `Person` to add a `greet()` method dynamically.
 
-Decorate a function say_hello() to print a message before execution.
+---
 
-17. Class Decorators
-Create a class decorator add_greeting.
+### 18. Property Decorators (`@property`, `@setter`, `@deleter`)
+- Create a `Product` class.
+- Use property decorators to get, set, and delete `_price`.
 
-Modify a class Person to add a greet() method dynamically.
+---
 
-18. Property Decorators (@property, @setter, @deleter)
-Create a Product class.
+### 19. `callable()` and `__call__()`
+- Create a `Multiplier` class.
+- Implement `__call__()` to multiply input by a factor.
 
-Use property decorators to get, set, and delete _price.
+---
 
-19. callable() and __call__()
-Create a Multiplier class.
+### 20. Creating a Custom Exception
+- Create an exception `InvalidAgeError`.
+- Use it in `check_age(age)` function if age < 18.
 
-Implement __call__() to multiply input by a factor.
+---
 
-20. Creating a Custom Exception
-Create an exception InvalidAgeError.
+### 21. Make a Custom Class Iterable
+- Create a `Countdown` class.
+- Implement `__iter__()` and `__next__()` to countdown from start number to 0.
 
-Use it in check_age(age) function if age < 18.
+---
 
-21. Make a Custom Class Iterable
-Create a Countdown class.
-
-Implement __iter__() and __next__() to countdown from start number to 0.
-
-🚀 Submission
+## 🚀 Submission
 Once you complete all tasks, submit your assignment using the provided form.
 
-🌟 Notes
-Focus on clean code.
+---
 
-Use meaningful class, variable, and method names.
+## 🌟 Notes
+- Focus on clean code.
+- Use meaningful class, variable, and method names.
+- Add comments if needed for clarity.
+- Enjoy coding and learning OOP!
 
-Add comments if needed for clarity.
+---
 
-Enjoy coding and learning OOP!
+---
 
-🔗 Related Learning Links
-Python OOP Concepts
-
-Python Decorators
-
-Python Iterators
-
-Abstract Classes in Python
-
-🏁 Good Luck and Happy Learning! 🚀
+# 🏁 Good Luck and Happy Learning! 🚀
